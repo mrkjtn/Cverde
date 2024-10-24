@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Full-screen VideoView for background video -->
+    <VideoView
+        android:id="@+id/videoViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/afacad"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="@string/Welcome"
+            android:textColor="#bdcaa1"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="36dp"
+            android:text="@string/Continue"
+            android:textColor="#E9E5D6"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/btnlogin"
+            android:fontFamily="@font/afacad"
+            android:text="@string/Login"
+            android:textColor="#b1b8a0"
+            android:textSize="18sp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btnsignin"
+            android:fontFamily="@font/afacad"
+            android:text="@string/SignUp"
+            android:textColor="#362706"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
